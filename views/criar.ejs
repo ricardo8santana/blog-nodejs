@@ -1,24 +1,10 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <% titulo%></title>
-</head>
+ <%- include('./parciais/nav.ejs') %>
 <body>
-    <nav>
-        <div class="title-site">
-            <a href="/"><h1>Blog</h1></a>
-            <p>Site</p>
 
-        </div>
-        <ul>
-            <li><a href="/">Blog</a></li>
-            <li><a href="sobre">Sobre</a></li>
-            <li><a href="/blog/criar">Novo Blog</a></li>
-        </ul>
-        <div class="criar-conteudo-blog">
+    <div class="criar-conteudo-blog">
             <form action="">
                 <label for="titulo">Titulo do Blog</label>
                 <input type="text" id="titulo" required>
@@ -29,5 +15,6 @@
                  <button>Enviar</button>
             </form>
         </div>
+        <%- include('./parciais/footer.ejs') %>
 </body>
 </html>
