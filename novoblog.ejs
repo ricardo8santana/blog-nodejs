@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Lista de Blogs</title>
+</head>
+<body>
+    <h1>Lista de Blogs</h1>
+    <table border="1" width="100%">
+        <tr>
+            <th>Código</th>
+            <th>Titulo</th>
+            <th>Texto curto do blog</th>
+        </tr>
+       
+        <% if (novoblog.length > 0 ) { %>
+        <% for (var i = 0; i < novoblog.length; i++) { %>
+           <tr>
+            <td><%-novoblog[i].id %></td>
+            <td><%-novoblog[i].titulo %></td>
+            <td><%-novoblog[i].textocurtodoblog %></td>
+           </tr>
+        <% } %>
+ 
+        <% } else { %>
+           <h1>Não temos blogs registrados no banco de dados</h1>
+        <% } %>
+ 
+         
+    </table>
+</body>
+</html>
