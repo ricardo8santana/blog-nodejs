@@ -18,7 +18,7 @@ update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
  
  
 --Inserir dados no banco de dados via código SQL (CREATE)
-INSERT INTO novoblog(tituloblog, textocurtodoblog, conteudodoblog);
+INSERT INTO novoblog(tituloblog, textocurtodoblog, conteudodoblog)
 VALUES ("receitas blog", "receitas faceis e práticas", "receitas de bolos, tortas, doces e salgados");
 
  
